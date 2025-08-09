@@ -144,7 +144,7 @@ Stub Loader Status & Error
 If the stub loader is used:
 
 -  The status response is always 2 bytes regardless of chip type.
--  Stub loader error codes are entirely different to the ROM loader codes. They all take the form ``0xC*``, or ``0xFF`` for "unimplemented command". (`Full list here <https://github.com/espressif/esptool/blob/master/flasher_stub/include/stub_flasher.h#L95>`_).
+-  Stub loader error codes are entirely different to the ROM loader codes. They all take the form ``0xC*``, or ``0xFF`` for "unimplemented command". (`Full list here <https://github.com/espressif/esptool-legacy-flasher-stub/blob/18462389a024fc1520c85aa161cf4877b68f83f5/flasher_stub/include/stub_flasher.h#L95>`_).
 
 After sending a command, the host should continue to read response packets until one is received where the Command field matches the request's Command field, or a timeout is exceeded.
 
